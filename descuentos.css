@@ -126,6 +126,11 @@ form .boton_descuento{
     border: none;
 }
 
+.cupones{
+    font-size: 10px;
+    font-weight: 300;
+}
+
 @media (max-width:850px) {
     .descuento{
         flex-direction: column;
