@@ -129,7 +129,7 @@ form .boton_descuento{
 @media (max-width:850px) {
     .descuento{
         flex-direction: column;
-        width: 70%;
+        width: 90%;
         margin: 35px auto;
         gap: 0;
     }
