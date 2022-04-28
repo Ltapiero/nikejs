@@ -1,0 +1,150 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background: #bfbfbf;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.descuento{
+    display: flex;
+    max-width: 800px;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 23px;
+    border-radius: 20px;
+    background: #bfbfbf;
+    box-shadow:  31px 31px 63px #a4a4a4,
+                 -31px -31px 63px #dadada;
+}
+
+.descuento_titulo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.descuento_titulo img{
+    width: 20%;
+}
+
+.descuento_titulo--img{
+    margin-top: 30px;
+}
+
+.descuento_titulo p{
+    font-weight: 700;
+}
+
+.descuento > div{
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+form label{
+    margin: 25px 0px;
+}
+
+form input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #9d9d9d;
+    font-size: 16px;
+    outline: none;
+    color: #383838;
+}
+
+#ResultC{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.precios{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: center;
+}
+
+.precios p:nth-child(1){
+    text-decoration: line-through;
+    color: #7c7c7c;
+}
+
+.precios p:nth-child(2){
+    font-size: 25px;
+}
+
+form button{
+    padding:10px;
+    margin: 10px 0px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form .boton_cupon{
+    border: 2px solid #000000;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+form .boton_descuento{
+    color: white;
+    background-color: #000000;
+    border: none;
+}
+
+@media (max-width:850px) {
+    .descuento{
+        flex-direction: column;
+        width: 70%;
+        margin: 35px auto;
+        gap: 0;
+    }
+
+    .contenedor{
+        align-content: space-between;
+    }
+
+    .descuento_titulo--img{
+        margin-top: 40px;
+        margin-bottom: -30px;
+    }
+    }
+
+    form button{
+        margin-top: 40px;
+    }
+}

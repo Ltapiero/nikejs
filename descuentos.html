@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="descuentos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <section class="contenedor">
+        <div class="descuento">
+            <div>
+                <div class="descuento_titulo">
+                    <img src="./img/nike.png" alt="">
+                    <p>Calzado - Nike</p>
+                </div>
+                <img class="descuento_titulo--img" src="./img/producto.png" alt="">
+                <div class="precios">
+                    <p id="ResultSinDescuento"></p>
+                    <p id="ResultP"></p>
+                </div>
+            </div>
+            <div>
+                <form action="">
+                    <label for="InputPrice" for="">Escribe el precio de tus zapatillas:</label>
+                    <input id="InputPrice" type="number">
+    
+                    <label for="InputDiscount" for="">Escribe el descuento:</label>
+                    <input id="InputDiscount" type="number">
+
+                    <label for="InputCupon" for="">Cupón de descuento:</label>
+                    <input id="InputCupon" type="text">
+
+                    <button class="boton_cupon" type="button" onclick="onClickButtonCuponDiscount()">Validar cupón</button>
+
+                    <p id="ResultC"></p>
+    
+                    <button class="boton_descuento"type="button" onclick="onClickButtonPriceDiscount()">Calcula el precio con descuento</button>
+    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>
